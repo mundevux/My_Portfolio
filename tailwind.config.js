@@ -3,10 +3,10 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     colors: {
-      primary: '#36393B',
-      secondary: '#E6E6E6',
+      primary: '#222222',
+      secondary: '#FFFFFF',
       tertiary: '#FB5012',
-      quaternary: '#2F97C1',
+      quaternary: '#1c5d99',
     },
     extend: {},
   },
