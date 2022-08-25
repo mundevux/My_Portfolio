@@ -81,3 +81,17 @@ if (document.readyState !== 'loading') {
 	// DOMContentLoaded event not yet fired, attach initialization process to it
 	document.addEventListener('DOMContentLoaded', initCollapse)
 }
+
+
+const btnSend = document.getElementById('sendMail');
+
+btnSend.addEventListener('click', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value; 
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    window.location.href = `mailto:camiloandres174@gmail.com?subject=${subject}&body=Name%3A%20${name}%0AMail%3A%20${email}%0AMessage%3A%20${message}`;
+    form.reset();
+    alert('Thank you for your message!');
+} );
