@@ -95,3 +95,7 @@ btnSend.addEventListener('click', function(e) {
     form.reset();
     alert('Thank you for your message!');
 } );
+
+
+
+
